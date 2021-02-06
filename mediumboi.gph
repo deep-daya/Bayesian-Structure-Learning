@@ -1,0 +1,32 @@
+strict digraph  {
+fixedacidity;
+volatileacidity;
+citricacid;
+residualsugar;
+chlorides;
+freesulfurdioxide;
+totalsulfurdioxide;
+density;
+ph;
+sulphates;
+alcohol;
+quality;
+fixedacidity -> ph;
+fixedacidity -> alcohol;
+volatileacidity -> quality;
+volatileacidity -> alcohol;
+citricacid -> fixedacidity;
+residualsugar -> density;
+residualsugar -> volatileacidity;
+chlorides -> alcohol;
+chlorides -> citricacid;
+totalsulfurdioxide -> freesulfurdioxide;
+density -> alcohol;
+density -> citricacid;
+density -> totalsulfurdioxide;
+density -> sulphates;
+alcohol -> quality;
+alcohol -> totalsulfurdioxide;
+alcohol -> sulphates;
+alcohol -> ph;
+}
